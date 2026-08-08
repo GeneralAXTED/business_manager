@@ -1,4 +1,3 @@
-```markdown
 # 📊 Telegram Business Manager
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
@@ -39,74 +38,46 @@ business_manager/
     ├── qarzdorlik.py # Debt module (Debt tracking, creation, and payment)
     └── hisobot.py    # Financial reporting module (Daily & monthly summaries)
 
-```
-
----
-
-## ⚙️ Installation & Setup
-
-### 1. Clone the Repository
-
-```bash
+⚙️ Installation & Setup
+1. Clone the Repository
+Bash
 git clone [https://github.com/GeneralAXTED/business_manager.git](https://github.com/GeneralAXTED/business_manager.git)
 cd business_manager
 
-```
-
-### 2. Install Dependencies
-
+2. Install Dependencies
 Make sure you have Python installed, then run:
 
-```bash
+Bash
 pip install -r requirements.txt
+3. Configure the Bot Token
+Open bot.py and replace the placeholder token with your actual Telegram Bot token obtained from @BotFather:
 
-```
-
-### 3. Configure the Bot Token
-
-Open `bot.py` and replace the placeholder token with your actual Telegram Bot token obtained from [@BotFather](https://t.me/BotFather):
-
-```python
+Python
 BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
-
-```
-
-### 4. Run the Application
-
+4. Run the Application
 Start the bot by executing:
 
-```bash
+Bash
 python bot.py
+📱 How to Use
+Open your bot on Telegram and send the /start command.
 
-```
+Use the reply keyboard menu to navigate between sections:
 
----
+📦 Ombor: Add products and check current stock.
 
-## 📱 How to Use
+👥 Mijozlar bazasi: Register clients and view customer directories.
 
-1. Open your bot on Telegram and send the `/start` command.
-2. Use the reply keyboard menu to navigate between sections:
-* **📦 Ombor:** Add products and check current stock.
-* **👥 Mijozlar bazasi:** Register clients and view customer directories.
-* **🛒 Buyurtmalar:** Process new sales and automatically deduct stock.
-* **💳 Qarzdorlik:** Manage credit/debt records and process client payments.
-* **📊 Kunlik/Oylik Hisobot:** View total sales for today and the current month.
+🛒 Buyurtmalar: Process new sales and automatically deduct stock.
 
+💳 Qarzdorlik: Manage credit/debt records and process client payments.
 
-3. At any point during a multi-step process (FSM), type `/cancel` to abort the current operation and return to the main menu.
+📊 Kunlik/Oylik Hisobot: View total sales for today and the current month.
 
----
+At any point during a multi-step process (FSM), type /cancel to abort the current operation and return to the main menu.
 
-## 👤 Author
+👤 Author
+GeneralAXTED (AxTeD General)
 
-* **GeneralAXTED (AxTeD General)**
-
----
-
-## 📝 License
-
-This project is open-source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
-
-```
-
-```
+📝 License
+This project is open-source and available under the MIT License.
